@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container{
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+      <div class="container"> 
+        <h1>Registro de articulos</h1>
+        <form>
+            <label for="no_cuenta">
+            Código:
+            </label>
+            <input type="text" id="no_cuenta" name="no_cuenta" class="form-control" placeholder="Escribe tu número de cuenta">
+        </div>
+        <!--No-->
+        <div class="form-group"> 
+            <label for="noarticulo">
+        No. de articulo:
+        </label>
+        <input type="number" id="noarticulo" name="noarticulo" class="form-control" placeholder="Numero de articulo">
+        </div>
+        <!---->
+        <div class="form-group">
+        <label for= "descripcion">
+        Descripción:
+        </label>
+        <input type="text" id="descripcion" name="descripcion" class="form-control" placeholder="Descripción del articulo">
+    </div>
+    <!--Unid-->
+    <div class="form-group">
+    <label for="unidad">
+     Unidades disponibles:
+    </label>
+     <input type="number" id="unidad" name=" unidad" class="form-control"
+       placeholder="Unidades disponibles">
+    </div>
+    <div class="form-group">
+        <label for="precio">
+         Precio:
+        </label>
+         <input type="number" id="precio" name=" precio" class="form-control"
+           placeholder="Escribe el precio">
+    
+        </div>
+    <!--Botón guardar-->
+    <div class="form-group">
+    <input type="submit" value="Registrar" id="btn_guardar" class="btn btn-primary">
+    </div>
+         </form>
+    <div class="card">
+           <div class="card-body" id="salida"> 
+            <table id="lista_articulos" class="table table-striped">
+    <thead>
+                <tr>
+                 <th>Fotografía</th>
+                 <th>No. Articulo</th>
+                 <th>Descripción</th>
+                 <th>Unidades disponibles</th>
+                 <th>Precio</th>
+               </tr>
+    </thead>
+           <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="js/registro_articulos.js"></script>
+
+</body>
+</html>
